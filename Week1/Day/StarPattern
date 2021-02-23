@@ -1,0 +1,82 @@
+public class RightPyr
+{
+    public static void main (String[] args)
+    {
+        int i, j, num = 4;
+        for (i = 0; i < num; i++) // number of rows - outer loop
+        {
+              for (j = 0; j <= i; j++) // number of columns - inner loop
+        {
+        System.out.print("* ");
+        }
+        System.out.println(); // new line after each row
+   }
+	System.out.print("- - - - - - - - -");   
+   }
+}
+
+
+
+public class DownRightPyr
+{
+	public static void main (String[] args)
+	{
+	    System.out.println("- - - - - - - - -");  
+		int i, j, num = 4;
+		for (i = num - 1; i >= 0; i-- ) // number of rows - outer loop
+		    {
+		    for (j = 0; j <= i; j++)
+		    {
+		        System.out.print("*");
+		    }
+        System.out.println(); // new line after each row
+    		}
+    }
+}
+
+
+
+public class Pyr
+{
+	public static void main (String[] args)
+	{
+		int i, j, num = 4;
+		for (i = 1; i <= num; i++ ) // number of rows - outer loop
+		    {
+		    for (j = 0; j < num - i; j++) // inner loop space
+		    {
+		        System.out.print(" ");   
+            }   
+		        for (j = 0; j < (i*2)-1; j++) // 2nd inner for loop - each row contains (2*row number-1)of stars
+		        {
+		            System.out.print("*");
+		        }
+        		System.out.println(); // new line after each row
+            	}
+	 	System.out.print("- - - - - - - - -");   
+	}
+}
+
+
+
+
+public class Pyr
+{
+	public static void main (String[] args)
+	{
+	 	System.out.println("- - - - - - - - -");
+		int i, j, num = 4;
+		for (i = 4; i >= 1; i-- ) // number of rows - outer loop
+		    {
+		    for (j = 0; j <= num - i; j++) // inner loop space
+		    {
+		        System.out.print(" ");   
+            }   
+		        for (j = 0; j < (i*2)-1; j++) // 2nd inner for loop - each row contains (2*row number-1)of stars
+		        {
+		            System.out.print("*");
+		        }
+            System.out.println(); // new line after each row
+            }
+	}
+}
