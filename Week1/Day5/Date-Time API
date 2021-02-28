@@ -1,0 +1,20 @@
+Date-Time API
+ 
+1. Which class would you use to store your birthday in years, months, days, seconds, and nanoseconds?
+the LocalDateTime class and ZonedDateTime (for specific time zone) class to with period?
+Ans: The LocalDateTime class and ZonedDateTime (for specific time zone) 
+
+2. Given a random date, how would you find the date of the previous Thursday?
+Ans: The previous(DayOfWeek) method of a TemporalAdjusters class is used to return a previous DayOfWeek
+Example: date.with(TemporalAdjuster.previous(DayOfWeek.THURSDAY)));
+
+3. What is the difference between a ZoneId and a ZoneOffset?
+Ans: ZoneId describes a time-zone identifier and provides rules for converting between an Instant and a LocalDateTime . ZoneOffset describes a time-zone offset, which is the amount of time (typically in hours) by which a time zone differs from UTC/Greenwich.
+
+4. How would you convert an Instant to a ZonedDateTime? How would you convert a ZonedDateTime to an Instant?
+Ans: You can convert an Instant to a ZonedDateTime by using the ZonedDateTime.ofInstant method or you could use the Instant.atZone method:
+ZonedDateTime zdt = Instant.now().atZone(ZoneId.systemDefault());
+
+
+
+
